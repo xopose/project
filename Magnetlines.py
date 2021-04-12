@@ -1,11 +1,12 @@
 import tkinter as tk
+from tkinter import *
 import numpy as np
 import matplotlib.pyplot as plt
 import random
 import math
 
 np.seterr(divide='ignore', invalid='ignore')
-fields = 'X', 'Y', 'q_count'
+fields = 'X', 'Y', 'q_count', 'manual_x', 'manual_y', 'counter'
 
 def makeform(root, fields):
   entries = []
@@ -17,6 +18,7 @@ def makeform(root, fields):
     lab.pack(side=tk.LEFT)
     ent.pack(side=tk.RIGHT, expand=tk.YES, fill=tk.X)
     entries.append((field, ent))
+    
   return entries
 
 def show(entries):
@@ -31,6 +33,12 @@ def show(entries):
           N = number
         elif (field == "q_count"): # количество зарядов
           nq = number
+        elif (field == "manual_x"): # количество зарядов
+          manual_x = number
+        elif (field == "manual_y"): # количество зарядов
+          manual_y = number
+        elif (field == "counter"): # количество зарядов
+          counter = number
     # plot coordinates
     X = np.arange(0, M, 1)
     Y = np.arange(0, N, 1)
@@ -39,12 +47,19 @@ def show(entries):
     Ex = np.zeros((N, M))
     Ey = np.zeros((N, M))
    
-
     # вычисление положения зарядов и отрисовка
     qq = [[], []]  
-    for dummy in range(nq):
-        q = random.choice([-1, 1]) #выбор знака заряда
-        qx, qy = random.randrange(1, N), random.randrange(1, M) #выбор позиции
+    for num in range(nq):
+        
+
+        if (check.get() == 1):
+          q = random.choice([-1, 1]) #выбор знака заряда
+          qx, qy = random.randrange(1, N), random.randrange(1, M) #выбор рандомной позиции
+        else:
+          q = counter
+          qx, qy = manual_x, manual_y #выбор ручной позиции
+          check.set(1)
+          
         qq[0].append(qy)
         qq[1].append(qx)
         for i in range(N):
@@ -54,8 +69,8 @@ def show(entries):
                     Ex[i, j] += q * (j - qy) / denom
                     Ey[i, j] += q * (i - qx) / denom
 
-    # arrows color
-    C = np.hypot(Ex, Ey) #цвет стрелок SQRT(х * х + у * у)
+    # цвет стрелок
+    C = np.hypot(Ex, Ey) #SQRT(х * х + у * у) от 0 до 1
     # нормализованные значения для стрелок
     E = (Ex ** 2 + Ey ** 2) ** .5
     Ex = Ex / E
@@ -76,10 +91,19 @@ def show(entries):
     plt.axis('equal')
     plt.axis('off')
     plt.show()
+
 root = tk.Tk()
+
 root.title('Входные данные')
+
 ents = makeform(root, fields)
 b1 = tk.Button(root, text='Построить', command=(lambda e=ents: show(e)), height = 2,width = 14)
+
+check = tk.IntVar()
+c1 = tk.Checkbutton(root, text='Random_pos',variable=check, onvalue=1, offvalue=0)
+c1.pack()
+
+
 b1.pack(side=tk.BOTTOM, padx=20, pady=5)
 root.mainloop()
 
