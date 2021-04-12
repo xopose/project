@@ -1,6 +1,11 @@
 Проект по физике. Визуализация линий поля
 
 
+![image](https://user-images.githubusercontent.com/30976652/114445558-e1e42a80-9bd8-11eb-8865-9f6cc359ca3f.png)
+<p></p>
+<p></p>
+<p></p>
+
 ![image](https://user-images.githubusercontent.com/30976652/114444105-28388a00-9bd7-11eb-8682-49dd93af8f70.png)
 
 <p></p>
