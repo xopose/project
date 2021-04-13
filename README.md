@@ -1,7 +1,7 @@
 
 
 <h1>Вычисление вектора Е</h1>
-<img src="https://user-images.githubusercontent.com/30976652/114514306-cc581a80-9c43-11eb-86c4-c4020d228f23.png" width=90px height=60px>
+<img src="https://user-images.githubusercontent.com/30976652/114514306-cc581a80-9c43-11eb-86c4-c4020d228f23.png" width=100px height=60px>
 
 <p>Я рассчитывал вектор напряженности с помощью треугольника, получая тем самым проекции на оси x и y.</p>
 
