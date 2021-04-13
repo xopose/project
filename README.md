@@ -1,3 +1,4 @@
+<script src="http://fred-wang.github.io/mathml.css/mspace.js"></script>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mi>E</mi>
   <mo>=</mo>
