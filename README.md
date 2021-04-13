@@ -1,7 +1,7 @@
 <h1>Вычисление вектора Е</h1>
 <p>Я рассчитывал вектор напряженности с помощью треугольника, получая тем самым проекции на оси x и y.</p>
 
-<img src="https://user-images.githubusercontent.com/30976652/114445876-3edfe080-9bd9-11eb-8983-a51e1d5ed4b1.png" width=450px height=450px>
+<img src="https://user-images.githubusercontent.com/30976652/114445876-3edfe080-9bd9-11eb-8983-a51e1d5ed4b1.png" width=400px height=400px>
 
 <p>Из подобия следует, что радиуса вектора от заряда до  r и длинны вектора напряженности E равно отношению проекций этих векторов</p>
 <p>R/E=x/dx=y/dy</p>
