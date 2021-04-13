@@ -1,3 +1,25 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>E</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>k</mi>
+      <mo>&#x2217;<!-- ∗ --></mo>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mo stretchy="false">|</mo>
+      </mrow>
+      <mi>q</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mo stretchy="false">|</mo>
+      </mrow>
+    </mrow>
+    <msup>
+      <mi>r</mi>
+      <mn>2</mn>
+    </msup>
+  </mfrac>
+</math>
+
 <h1>Вычисление вектора Е</h1>
 <p>Я рассчитывал вектор напряженности с помощью треугольника, получая тем самым проекции на оси x и y.</p>
 
