@@ -1,27 +1,8 @@
-<script src="http://fred-wang.github.io/mathml.css/mspace.js"></script>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mi>E</mi>
-  <mo>=</mo>
-  <mfrac>
-    <mrow>
-      <mi>k</mi>
-      <mo>&#x2217;<!-- ∗ --></mo>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mi>q</mi>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-    </mrow>
-    <msup>
-      <mi>r</mi>
-      <mn>2</mn>
-    </msup>
-  </mfrac>
-</math>
+
 
 <h1>Вычисление вектора Е</h1>
+<img src="https://user-images.githubusercontent.com/30976652/114514306-cc581a80-9c43-11eb-86c4-c4020d228f23.png" width=150px height=150px>
+
 <p>Я рассчитывал вектор напряженности с помощью треугольника, получая тем самым проекции на оси x и y.</p>
 
 <img src="https://user-images.githubusercontent.com/30976652/114445876-3edfe080-9bd9-11eb-8983-a51e1d5ed4b1.png" width=400px height=400px>
