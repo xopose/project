@@ -4,7 +4,7 @@
 <img src="https://user-images.githubusercontent.com/30976652/114445876-3edfe080-9bd9-11eb-8983-a51e1d5ed4b1.png" width=400px height=400px>
 
 <p>Из подобия следует, что радиуса вектора от заряда до  r и длинны вектора напряженности E равно отношению проекций этих векторов</p>
-<img src="http://latex.numberempire.com/render?\frac{R}{E} = \frac{x}{dx} = \frac{y}{dy}" >
+<p>\frac{R}{E} = \frac{x}{dx} = \frac{y}{dy}</p>
 <p>Формуля результирующего вектора</p>
 
 ![image](https://user-images.githubusercontent.com/30976652/114446408-e0673200-9bd9-11eb-9a45-ea7799d2be35.png)
